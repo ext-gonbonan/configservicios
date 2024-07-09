@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/tiendavirtual?serverTimezone=UTC
+    username: root
+    password: password   
+  jpa:
+    hibernate:
+      naming.implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+      naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      #ddl-auto: update
+    #show-sql: true
+  #application:
+    #name: 11-servicio-productos
+  devtools:
+    restart:
+      enabled: true
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  #instance:
+    #hostname: localhost
+    #prefer-ip-address: true
+
+server:
+  port: 8000
