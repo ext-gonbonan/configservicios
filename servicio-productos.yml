@@ -3,7 +3,8 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3307/tiendavirtual?serverTimezone=UTC
     username: root
-    password: password   
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       naming.implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
